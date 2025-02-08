@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Keren</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        
+        /* Header */
+        header {
+            background: #3498db;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+            text-align: center;
+            flex-direction: column;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .hero button {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 8px;
+        }
+        .hero button:hover {
+            background: #c0392b;
+        }
+        
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .feature-box {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .feature-box i {
+            font-size: 2rem;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        .feature-box h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Landing Page Keren
+    </header>
+    
+    <div class="container">
+        <section class="hero">
+            <h1>Selamat Datang!</h1>
+            <p>Website ini memiliki desain modern dan responsif.</p>
+            <button>Pelajari Lebih Lanjut</button>
+        </section>
+        
+        <section class="features">
+            <div class="feature-box">
+                <i class="fas fa-bolt"></i>
+                <h3>Kecepatan</h3>
+                <p>Desain ringan dan cepat diakses.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsif</h3>
+                <p>Nyaman dilihat di semua perangkat.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-lock"></i>
+                <h3>Keamanan</h3>
+                <p>Dilengkapi dengan fitur keamanan terbaik.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

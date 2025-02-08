@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="slider-container" onmouseover="pauseSlide()" onmouseleave="resumeSlide()">
+    <div class="slider">
+        <div class="slide"><img src="img/merah.png" alt="Slide 1"></div>
+        <div class="slide"><img src="img/kuning.png" alt="Slide 2"></div>
+        <div class="slide"><img src="img/ungu.png" alt="Slide 3"></div>
+        <div class="slide"><img src="img/biru.png" alt="Slide 3"></div>
+    </div>
+
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+
+    <div class="dots">
+        <span class="dot" onclick="setSlide(0)"></span>
+        <span class="dot" onclick="setSlide(1)"></span>
+        <span class="dot" onclick="setSlide(2)"></span>
+        <span class="dot" onclick="setSlide(3)"></span>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
